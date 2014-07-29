@@ -14,11 +14,9 @@ Install
 -------
 
 ```
-vagrant box add nixbox32 http://zimbatm.s3.amazonaws.com/nixbox/nixos32-virtualbox.box
-vagrant init nixbox32
+vagrant init zimbat/nixbox32
 # or
-vagrant box add nixbox64 http://zimbatm.s3.amazonaws.com/nixbox/nixos64-virtualbox.box
-vagrant init nixbox64
+vagrant init zimbatm/nixbox64
 ```
 
 Building the images
@@ -40,6 +38,12 @@ The .box image is now ready to go and you can use it in vagrant:
 ```
 vagrant box add nixbox32 nixbox32-virtualbox.box
 # or
-vagrant box add nixbox64-nixbox64-virtualbox.box
+vagrant box add nixbox64 nixbox64-virtualbox.box
 ```
+
+TODO
+----
+
+There is a `vagrant-nixos` gem out there that adds a NixOS provisioning
+option to vagrant. Test this out.
 
